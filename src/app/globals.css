@@ -1,0 +1,35 @@
+/* ورود TailwindCSS */
+@import "tailwindcss";
+
+/* متغیرهای رنگ برای تم روشن */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* اگر از تم‌های سفارشی استفاده می‌کنید، می‌توانید اینجا تعریف کنید */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* اگر تم تاریک را نمی‌خواهید، این قسمت را کامنت یا حذف کنید */
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+*/
+
+/* استایل پیش‌فرض برای کل صفحه */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+
+  /* اول Vazirmatn، بعد sans-serif (برای fallback) */
+  font-family: var(--font-vazir), sans-serif;
+}
